@@ -1,3 +1,5 @@
+
+
 let menuIcon = document.querySelector('.menuIcon');
        let nav = document.querySelector('.overlay-menu');
 
@@ -26,7 +28,9 @@ let menuIcon = document.querySelector('.menuIcon');
 
 
 
+       $("#login-button").click(function(event){
+      		 event.preventDefault();
 
-
-
-      
+      	 $('form').fadeOut(500);
+      	 $('.wrapper').addClass('form-success');
+      });
