@@ -1,3 +1,4 @@
+
 * {
   border: 0;
   box-sizing: border-box;
@@ -60,6 +61,12 @@ a {
     }
   }
 
+#subtitle {
+  font-size: 12px;
+  text-align: center;
+  color: purple;
+  position: absolute;
+}
 #navbar ul {
   display: inline-block;
   float: right;
@@ -321,6 +328,49 @@ a {
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
+
+
+
+
+
+
+
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://images.squarespace-cdn.com/content/5429a845e4b00d5037c67caa/1423091580918-96CJT9D6XZMUI47DKEBI/shutterstock_37660918.jpg?format=1500w&content-type=image%2Fjpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+.header {
+  position: relative;
+  text-shadow: 2px 2px 2px #000;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  color: #fff;
+  opacity: 1;
+  transform: translate(-50%, -50%);
+
+}
+
+.headline {
+  font-size: 5em;
+  letter-spacing: 25px;
+
+}
+.subheadline{
+  letter-spacing: 15px;
+}
+
+
+
+
 
 
 
