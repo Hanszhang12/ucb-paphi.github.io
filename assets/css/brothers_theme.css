@@ -339,102 +339,54 @@ a {
 
 
 
-/* https://images.squarespace-cdn.com/content/5429a845e4b00d5037c67caa/1423091580918-96CJT9D6XZMUI47DKEBI/shutterstock_37660918.jpg?format=1500w&content-type=image%2Fjpeg */
 
-.hero {
-  width: 100%;
-  height: 100vh;
-  background-image: url(https://images.squarespace-cdn.com/content/5429a845e4b00d5037c67caa/1423091580918-96CJT9D6XZMUI47DKEBI/shutterstock_37660918.jpg?format=1500w&content-type=image%2Fjpeg );
-  background-position: center;
-  background-size: cover;
-}
 
-.header {
-  position: relative;
-  text-shadow: 2px 2px 2px #000;
-  width: 100%;
-  left: 50%;
-  top: 50%;
-  text-transform: uppercase;
+
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
   text-align: center;
-  margin: 0;
-  color: #fff;
-  opacity: 1;
-  transform: translate(-50%, -50%);
-  transition: var(--transition);
-
-
 }
 
-.headline {
-  font-size: 5em;
-  letter-spacing: 25px;
-
-}
-.subheadline{
-  letter-spacing: 15px;
-}
-
-
-
-
-
-
-
-
-/* class added to header on first scroll */
-.header-slide-in {
-  transform: translate(0);
-  opacity: 1;
-}
-.header-fade-out {
-  opacity: 0;
-}
-:root {
-  --transition: all 1s;
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
 }
 
-*, *::before, *::after {
-  box-sizing: inherit;
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.panels {
-  width: 80%;
-  margin: 10% auto;
-  line-height: 1.5;
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
 }
 
-.panel {
-  display: flex;
-  margin: 2em 0;
-  align-items: center;
-
-  opacity: 0;
-  transform: translateY(10%);
-
-  transition: var(--transition);
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
-.panel div {
-  width: 50%;
-  padding: 2em;
-}
-
-.panel img {
-  width: 100%;
-  box-shadow: 0 20px 25px -10px rgba(0,0,0,.6);
-}
-
-.panel-fade-in {
-  opacity: 1;
-  transform: translate(0);
+.title {
+  color: grey;
 }
 
 
 
 
 
-/*footer*/
+
+
+
 
 
 
