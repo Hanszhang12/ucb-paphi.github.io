@@ -1,67 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-	<meta charset="utf-8"/>
-	<title>UC Berkeley Pi Alpha Phi</title>
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<meta name="author" content="Hans Zhang">
-	<!-- <link rel="shortcut icon" href="assets/img/favicon/favicon.ico" type="image/x-icon"> -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
-	<link rel="stylesheet" href="assets/css/portal_theme.css" type="text/css" media="all"/>
-  </head>
+<html>
+<head>
+  <title>Firebase Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/portal_theme.css"/>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
 
 
-  <body>
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <nav id="navbar" class="">
-      <div class="nav-wrapper">
-        <!-- Navbar Logo -->
-        <div class="logo">
+  <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
+</head>
+<body>
 
-          <!-- Logo Placeholder for Inlustration -->
-          <a href="#home"><img src="assets/img/logo.svg" width="40px" style="padding-right: 6px; vertical-align: middle;"></a>
-        </div>
+  <div id="login_div" class="main-div">
+    <h3>Brother Login</h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
 
-        <!-- Navbar Links -->
-        <ul id="menu">
-          <li><a href="index.html">Home</a></li><!--
-       --><li><a href="about.html">About</a></li><!--
-       --><li><a href="brothers.html">Brothers</a></li><!--
-       --><li><a href="#portal">Portal</a></li>
-        </ul>
-      </div>
+    <button onclick="login()">Login to Account</button>
+  </div>
 
-      <!-- Menu Icon -->
-      <div class="menuIcon">
-        <span class="icon icon-bars"></span>
-        <span class="icon icon-bars overlay"></span>
-      </div>
-
-
-      <div class="overlay-menu">
-        <ul id="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="brothers.html">Brothers</a></li>
-            <li><a href="#portal">Portal</a></li>
-          </ul>
-      </div>
-    </nav>
+  <div id="user_div" class="loggedin-div">
+    <h3>Welcome User</h3>
+    <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
+    <button onclick="logout()">Logout</button>
+  </div>
 
 
 
 
 
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCeHyEw7bGKbH0CVl2oRyFP2r5mfDnq45U",
+      authDomain: "paphi-website.firebaseapp.com",
+      databaseURL: "https://paphi-website.firebaseio.com",
+      projectId: "paphi-website",
+      storageBucket: "paphi-website.appspot.com",
+      messagingSenderId: "190367289315",
+      appId: "1:190367289315:web:3024a3e059563d36bedad6",
+      measurementId: "G-RM415BB5C0"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
 
-
-
-
-
-
-
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
-
-  <script type="text/javascript" src="assets/js/main.js"></script>
+  <script src = "assets/js/main.js"></script>
   </body>
-  </html>
+</html>
