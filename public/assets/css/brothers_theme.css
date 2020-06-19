@@ -432,15 +432,16 @@ h2 {
 .img-box:after {
   content: '';
   opacity: 0;
-  width: 200px:auto;
-  height: 250px:auto;
+  width: 500px;
+  height: 20px;
   background-color: rgba(0, 0, 0, 0.6);
-  position: absolute;
+  position: relative;
   right: 0;
   left: 0;
   top: 0;
   bottom: 0;
 }
+
 
 .img-box ul {
   margin: 0;
@@ -454,6 +455,15 @@ h2 {
   opacity: 0;
 
 }
+
+.img-box .img-responsive{
+  opacity: 1;
+}
+
+.img-box .img-responsive:hover{
+  opacity: .8;
+}
+
 
 .img-box ul li {
   width: 30 px;
