@@ -344,10 +344,41 @@ a {
 .hero {
   width: 100%;
   height: 50vh;
-  background: url(https://images8.alphacoders.com/100/1003354.jpg);
+  background: black;
   background-position: center;
   background-size: cover;
 }
+/* about */
+
+.hero1 {
+  width: 100%;
+  height: 50vh;
+  background: black;
+  background-position: center;
+  background-size: cover;
+
+}
+.headline1{
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #fff;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.headline1:after {
+  content: " ";
+  background: #333;
+  display: block;
+  height: 3px;
+  width: 150px;
+  margin: 10px auto;
+}
+/* about */
+
+
+
 
 .header {
   position: relative;
@@ -460,9 +491,8 @@ h2 {
   opacity: 1;
 }
 
-.img-box .img-responsive:hover{
-  opacity: .8;
-}
+
+
 
 
 .img-box ul li {
