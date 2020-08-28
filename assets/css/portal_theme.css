@@ -1,3 +1,75 @@
+body {
+  background: #fff;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+}
+
+input, button {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+}
+
+.main-div {
+  width: 20%;
+  margin: 0px auto;
+  margin-top: 150px;
+  padding: 20px;
+  display:block;
+}
+
+.loggedin-div {
+  width: 20%;
+  margin: 0px auto;
+  margin-top: 150px;
+  padding: 20px;
+  display: none;
+}
+
+.main-div input {
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #fff;
+  padding: 15px;
+  outline: none;
+  width: 100%;
+  margin-bottom: 20px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+}
+
+.main-div input:focus {
+  border: 1px solid #777;
+}
+
+.main-div button, .loggedin-div button {
+  background: #5d8ffc;
+  color: #fff;
+  border: 1px solid #5d8ffc;
+  border-radius: 5px;
+  padding: 15px;
+  display: block;
+  width: 100%;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+}
+
+.main-div button:hover, .loggedin-div button:hover {
+  background: #fff;
+  color: #5d8ffc;
+  border: 1px solid #5d8ffc;
+  cursor: pointer;
+} */
+
+
+
+
+
+
 
 * {
   border: 0;
@@ -27,7 +99,7 @@ a {
                           Navbar
   ======================================================*/
 #navbar {
-  background: white;
+  background: rgb(111, 165, 254);
   color: rgb(13, 26, 38);
   position: fixed;
   top: 0;
@@ -332,289 +404,4 @@ a {
   color: rgb(28, 121, 184);
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
-}
-
-
-
-
-
-
-
-
-.hero {
-  width: 100%;
-  height: 50vh;
-  background: black;
-  background-position: center;
-  background-size: cover;
-}
-/* about */
-
-.hero1 {
-  width: 100%;
-  height: 50vh;
-  background: black;
-  background-position: center;
-  background-size: cover;
-
-}
-.headline1{
-  font-size: 50px;
-  text-align: center;
-  font-weight: bold;
-  letter-spacing: 2px;
-  color: #fff;
-  padding-bottom: 10px;
-  padding-top: 10px;
-}
-.headline1:after {
-  content: " ";
-  background: #333;
-  display: block;
-  height: 3px;
-  width: 150px;
-  margin: 10px auto;
-}
-/* about */
-
-
-
-
-.header {
-  position: relative;
-  text-shadow: 2px 2px 2px #000;
-  width: 100%;
-  left: 50%;
-  top: 50%;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 0;
-  color: #fff;
-  opacity: 1;
-  transform: translate(-50%, -50%);
-  transition: var(--transition);
-}
-
-.headline{
-  font-size: 50px;
-  text-align: center;
-  font-weight: bold;
-  letter-spacing: 2px;
-  color: #fff;
-  padding-bottom: 10px;
-  padding-top: 10px;
-}
-
-
-
-
-
-.team {
-  margin: 75 px 0;
-
-}
-h1 {
-  text-align: center;
-  font-weight: bold;
-  letter-spacing: 1px;
-  color: #333;
-  padding-bottom: 10px;
-  padding-top: 50px;
-}
-
-h1:after {
-  content: " ";
-  background: #333;
-  display: block;
-  height: 3px;
-  width: 150px;
-  margin: 10px auto;
-}
-
-h2 {
-  text-align: center;
-  font-weight: bold;
-  letter-spacing: 1px;
-  color: #333;
-}
-
-.profile {
-  margin-top: 25px;
-}
-
-.profile .img-box {
-  opacity: 1;
-  display: block;
-  position: relative;
-}
-
-.profile h2 {
-  font-size: 22px;
-  font-weight: bold;
-  margin-top: 15px;
-}
-
-.profile h3 {
-  font-size: 15px;
-  font-weight:bold;
-  margin-top: 5px;
-}
-
-.img-box:after {
-  content: '';
-  opacity: 0;
-  width: 500px;
-  height: 20px;
-  background-color: rgba(0, 0, 0, 0.6);
-  position: relative;
-  right: 0;
-  left: 0;
-  top: 0;
-  bottom: 0;
-}
-
-
-.img-box ul {
-  margin: 0;
-  padding: 20px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 0;
-  display: block;
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-
-}
-
-.img-box .img-responsive{
-  opacity: 1;
-}
-
-
-
-
-
-.img-box ul li {
-  width: 30 px;
-  height: 30 px;
-  margin: 3px;
-  padding: 7px;
-  display: inline-block;
-}
-
-.img-box a {
-  color: #fff;
-
-}
-.img-box:hover:after {
-  opacity: 1;
-
-}
-
-.img-box:hover ul {
-  opacity: 1;
-}
-
-.img-box a:hover li {
-  color: #007bff;
-}
-
-.img-box:after, .img-box ul, .img-box ul li {
-  transition: all 0.5s ease-in-out 0s;
-
-}
-
-
-
-
-
-
-textarea {
-    resize: none;
-}
-
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  white-space: nowrap;
-}
-
-@charset "UTF-8";
-
-.svg-inline--fa {
-  vertical-align: -0.200em;
-}
-
-.rounded-social-buttons {
-  text-align: center;
-}
-
-.rounded-social-buttons .social-button {
-  display: inline-block;
-  position: relative;
-  cursor: pointer;
-  width: 3.125rem;
-  height: 3.125rem;
-  border: 0.125rem solid transparent;
-  padding: 0;
-  text-decoration: none;
-  text-align: center;
-  color: #fefefe;
-  font-size: 1.5625rem;
-  font-weight: normal;
-  line-height: 2em;
-  border-radius: 1.6875rem;
-  transition: all 0.5s ease;
-  margin-right: 0.25rem;
-  margin-bottom: 0.25rem;
-}
-
-.rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
-  -webkit-transform: rotate(360deg);
-      -ms-transform: rotate(360deg);
-          transform: rotate(360deg);
-}
-
-.rounded-social-buttons .fa-twitter, .fa-facebook-f, .fa-linkedin, .fa-youtube, .fa-instagram {
-  font-size: 25px;
-}
-
-.rounded-social-buttons .social-button.facebook {
-  background: #3b5998;
-}
-
-.rounded-social-buttons .social-button.facebook:hover, .rounded-social-buttons .social-button.facebook:focus {
-  color: #3b5998;
-  background: #fefefe;
-  border-color: #3b5998;
-}
-
-
-
-.rounded-social-buttons .social-button.linkedin {
-  background: #007bb5;
-}
-
-.rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
-  color: #007bb5;
-  background: #fefefe;
-  border-color: #007bb5;
-}
-
-
-
-.rounded-social-buttons .social-button.instagram {
-  background: #125688;
-}
-
-.rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
-  color: #125688;
-  background: #fefefe;
-  border-color: #125688;
 }
